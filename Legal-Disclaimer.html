@@ -11,6 +11,9 @@ body {
 	margin-bottom: 0px;
 	font-weight: bold;    font: 12px/1.5 tahoma,arial,"Hiragino Sans GB","宋体",sans-serif;
 }
+.active{background:#ffa54a;}
+.qiye-list ul li.active a{color:#FFF;font-weight:bold;}
+
 </style>
 <link href="css/index.css" rel="stylesheet" type="text/css" />
 <script src="css/jquery.js"></script>
@@ -32,6 +35,8 @@ body {
 <li><a href="Investors.html">投资人关系</a></li>
 <li><a href="Cooperation-talks.html">合作洽谈</a></li>
 
+
+
 </ul>
 </div>
 </div>
@@ -40,66 +45,22 @@ body {
 <div class="page">
 <div class="contact">
 <div class="qiye-left">
-<div class="qiye-title">合作洽谈</div>
-<div class="qiye-tiitle-xian"></div>
-<div class="qiye-list">
-<ul id="nav">
+<div class="qiye-title">法律声明</div>
+    <div class="qiye-tiitle-xian"></div>
+    
+        <div class="qiye-list">
+            <ul id="nav">
+                <li class="active" id="bref"><a href="#" targetDiv="div1">法律声明</a></li>
 
-				<li id="headquarters" class="active"><a href="#" targetDiv="div1">海德在线总部</a></li>
-                <li id="hrjia"><a href="" targetDiv="div2">人力加盟</a></li>
-                <li id="operate"><a href="#" targetDiv="div3">运营推广中心</a></li>
-                <li id="market"><a href="#" targetDiv="div4">商务拓展中心</a></li>
-                <li ><a href="#" targetDiv="div5">供应链管理中心</a></li>
-                <li id="li6"><a href="#" targetDiv="div6">深圳分公司</a></li>
-                <li id="li7"><a href="#" targetDiv="div7">广州分公司</a></li>
-
-
-</ul>
-</div>
-</div>
+            </ul>
+        </div>
+    </div>
 <div class="qiye-right" id="div1">
-<p><span style=" font-size:18px">400电话：4008050095
-<br/>总    机：0755-28347393
-<br/>地    址：深圳市龙岗区丹竹头立信路43号永昌大厦6楼</span></p>
-</div>
-<div class="qiye-right" id="div2" style="overflow:auto;height:556px;">
-<p><span style=" font-size:18px">400电话：4008050095
-<br/>总    机：0755-28347393
-<br/>地    址：深圳市龙岗区丹竹头立信路43号永昌大厦6楼</span></p>
-
+<p>&nbsp &nbsp &nbsp &nbsp 海德在线独立拥有或与相关内容提供者共同拥有海德在线企业网站内相关内容（包括但不限于文字、图片、音讯、视频资料及页面设计、编排等）的版权和/或其他相关智慧财产权。受到法律保护。</p>
 </div>
 
-<div class="qiye-right" id="div3">
-<p><span style=" font-size:18px">400电话：4008050095
-<br/>总    机：0755-28347393
-<br/>地    址：深圳市龙岗区丹竹头立信路43号永昌大厦6楼</span></p>
 </div>
-
-<div class="qiye-right" id="div4">
-<p><span style=" font-size:18px">400电话：4008050095
-<br/>总    机：0755-28347393
-<br/>地    址：深圳市龙岗区丹竹头立信路43号永昌大厦6楼</span></p>
-</div>
-
-<div class="qiye-right" id="div5">
-<p><span style=" font-size:18px">400电话：4008050095
-<br/>总    机：0755-28347393
-<br/>地    址：深圳市龙岗区丹竹头立信路43号永昌大厦6楼</span></p>
-</div>
-
-<div class="qiye-right" id="div6">
-<p><span style=" font-size:18px">400电话：4008050095
-<br/>总    机：0755-28347393
-<br/>地    址：深圳市龙岗区丹竹头立信路43号永昌大厦6楼</span></p>
-</div>
-
-<div class="qiye-right" id="div7">
-<p><span style=" font-size:18px">400电话：4008050095
-<br/>总    机：0755-28347393
-<br/>地    址：深圳市龙岗区丹竹头立信路43号永昌大厦6楼</span></p>
-</div>
-
-<div class="yu"></div>
+<div class="yu" />
 </div>
 
 
@@ -153,7 +114,7 @@ body {
 <ul>
 <h2>合作洽谈</h2>
 <li><a href="Cooperation-talks.html?page=headquarters" targetDiv="div1">海德在线总部</a></li>
-<li><a href="Cooperation-talks.html?page=hrjia" targetDiv="div2">人力加盟</a></li>
+<li><a href="Cooperation-talks.html?page=hr" targetDiv="div2">人力加盟</a></li>
 <li><a href="Cooperation-talks.html?page=operate" targetDiv="div3">运营推广中心</a></li>
 <li><a href="Cooperation-talks.html?page=market" targetDiv="div4">商务拓展中心</a></li>
 <li><a href="Cooperation-talks.html?page=more" targetDiv="div5">更多>></a></li>
@@ -176,8 +137,7 @@ body {
 		$(".qiye-right").hide();
 		$("#div1").show();
 
-			$('#nav').delegate("li","click",function(){
-					
+				$('#nav').delegate("li","click",function(){
 			$("#nav li").removeClass("active");
 			$(this).addClass("active");
 			var target= $(this).find("a").attr("targetDiv");
