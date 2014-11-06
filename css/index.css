@@ -22,8 +22,8 @@ h1 ,h2{ padding:0px; margin:0px;}
 /**/
 
 .center{ background:url(../images/center-bj.jpg) repeat-x; height:881px; margin:0 auto}
-.yu{ background:url(../images/ico6.png) no-repeat; height: 526px;width: 700px;margin-left:670px; position:relative;top:428px;position:absolute; }
-#yu{height: 526px;width: 700px;margin-left:670px; position:relative;top:428px;position:absolute; }
+.yu{ background:url(../images/ico6.png) no-repeat; height: 526px;width: 700px;margin-left:670px; position:relative;top:520px;position:absolute; }
+#yu{height: 526px;width: 700px;margin-left:670px; position:relative;top:520px;position:absolute; }
 .yu1{ background:url(../images/ico6.png) no-repeat; height: 526px;width: 700px;margin-left:670px; position:relative;position:absolute; top:380px}
 .banner{ background:url(../images/banner_bj.png) no-repeat; height:355px; padding:10px; float:left;}
 .qiye{ float:right; background:url(../images/ico2.png) no-repeat; height:354px; width:292px;}
