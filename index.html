@@ -6,6 +6,9 @@
         <style type="text/css">
         </style>
         <link href="css/index.css" rel="stylesheet" type="text/css" />
+        <SCRIPT src="images/flash_files/flash.js" type=text/javascript></SCRIPT>
+
+<LINK href="images/flash_files/flash.css" type=text/css rel=stylesheet>
     </head>
     <body>
         <div class="header">
@@ -28,7 +31,23 @@
         <div class="center">
             <div class="page body">
                 <div class="contact">
-                    <div class="banner"><img src="images/ico2.jpg" width="680" height="330" /></div>
+                    <div class="banner"><div class=amy_flash >
+  <ul class="banners" id=promotion_banners>
+    <li id=banners_1_body_1 style="DISPLAY: block"><a 
+  href="#"><img src="images/tlfb1.jpg"></a> </li>
+    <li id=banners_2_body_1 style="DISPLAY: none"><a 
+  href="#"><img src="images/tlfb4.jpg"></a> </li>
+    <li id=banners_3_body_1 style="DISPLAY: none"><a 
+  href="#"><img src="images/tlfb3.jpg"></a> </li>
+  </ul>
+  <div class="switcher">
+    <ul class="points" id=banners>
+      <li class="current" id=banners_1>1 </li>
+      <li class="" id=banners_2>2 </li>
+      <li class="" id=banners_3>3 </li>
+    </ul>
+  </div>
+</div></div>
                     <div class="index-right">
                         <h2>企业核心价值</h2>
                         <strong>激情</strong>
@@ -46,9 +65,9 @@
                         <ul>
                             <li>
                                 <div class="news_size">
-                                    <div class="news-images"><img src="images/ico3.jpg" width="120" height="120" /></div>
+                                    <div class="news-images"><img src="images/ico8.jpg" width="120" height="120" /></div>
                                     <div class="news-right">
-                                        <h2><a href="news.html">公司新闻</a></h2>
+                                        <h2><a href="news.html?page=gsxw">公司新闻</a></h2>
                                         <p>2014年9月29日至30日，海德在线在布吉甘坑客家小镇和南山青青世界..
                                         </p>
                                     </div>
@@ -58,7 +77,7 @@
                                 <div class="news_size">
                                     <div class="news-images"><img src="images/ico4.jpg" width="120" height="120" /></div>
                                     <div class="news-right">
-                                        <h2><a href="news.html">行业资讯</a></h2>
+                                        <h2><a href="news.html?page=xyxw">行业资讯</a></h2>
                                         <p>环顾今年的汽修市场，我们遇到了网上卖汽配，卖完后让用户到线下店去...</p>
                                     </div>
                                 </div>
@@ -67,7 +86,7 @@
                                 <div class="news_size">
                                     <div class="news-images"><img src="images/ico5.jpg" width="120" height="120" /></div>
                                     <div class="news-right">
-                                        <h2><a href="news.html">企业公布</a></h2>
+                                        <h2><a href="news.html?page=xygb">企业公布</a></h2>
                                         <p>2014年11月3日
                                         深圳市海德在线有限公司过去的半年里在投资人...</p>
                                     </div>
@@ -94,6 +113,8 @@
                             <li><a href="products.html?page=the91carhelper" targetDiv="div1">91车助手</a></li>
                             <li><a href="products.html?page=the98carnews" targetDiv="div2">98车讯</a></li>
                             <li><a href="products.html?page=tthcc" targetDiv="div3">天天回程车</a></li>
+                            <li><a href="products.html?page=shenzhen" targetDiv="div4">深圳分公司</a></li>
+                            <li><a href="products.html?page=guangzhou" targetDiv="div5">广州分公司</a></li>
                         </ul>
                     </div>
                     <div class="bottom">
@@ -125,9 +146,33 @@
                             <li><a href="Cooperation-talks.html?page=more" targetDiv="div5">更多>></a></li>
                         </ul>
                     </div>
-                    <div class="address"><a href="Legal-Disclaimer.html">法律声明</a> |  <a href="Privacy-protection.html">隐私保护</a>  |  网站地图版权所有 © 海德在线有限公司 2014 保留一切权利。粤A2-20044005号</div>
+                    <div class="address"><a href="Legal-Disclaimer.html">法律声明</a> |  <a href="Privacy-protection.html">隐私保护</a>  |  网站地图版权所有 © 海德在线有限公司 2014 保留一切权利。</div>
                 </div>
             </div>
         </div>
+        <script>
+	$(document).ready(function(){
+		$(".qiye-right").hide();
+		$("#div1").show();
+
+			$('#nav').delegate("li","click",function(){
+		
+			$("#nav li").removeClass("active");
+			$(this).addClass("active");
+			var target= $(this).find("a").attr("targetDiv");
+			if(!target) return false;
+			
+			$(".qiye-right").hide();
+			$("#" + target).show();
+			});
+		if(document.location.search && document.location.search.length >0){
+			//TODO
+			var page = document.location.search.replace("?page=","");
+			$("#nav li").removeClass("active");
+			$("#" + page).trigger("click");
+		}
+
+	});
+</script>
     </body>
 </html>

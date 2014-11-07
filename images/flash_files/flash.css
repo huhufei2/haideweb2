@@ -1,0 +1,34 @@
+.amy_flash IMG {
+	BORDER: 0px
+}
+.amy_flash ul{ list-style-type:none
+}
+.amy_flash {
+	FONT: bold 8px/16px Verdana, Arial, Helvetica, sans-serif; OVERFLOW: hidden; WIDTH: 682px; HEIGHT: 330px;position:relative
+}
+.amy_flash .banners {
+	PADDING: 0px; MARGIN:0px
+}
+.amy_flash .banners LI {
+	DISPLAY: none; OVERFLOW: hidden; HEIGHT: 345px
+}
+.amy_flash .banners LI.current {
+	DISPLAY: block
+}
+.amy_flash .points {
+	OVERFLOW: hidden; WIDTH: 100px; HEIGHT: 40px
+}
+.amy_flash .points LI { FLOAT: left; OVERFLOW: hidden;CURSOR: pointer; background:url(btn-mainslideshow.png) no-repeat; TEXT-ALIGN: center; margin:5px; width:11px;  line-height: 11px;
+}
+.amy_flash .switcher {
+	POSITION:absolute;
+	left:560px;
+	top:300px;
+	width: 120;
+	height: 30;
+}
+.banners LI A IMG {
+	WIDTH: 714px; HEIGHT:345px
+}
+.amy_flash .points LI.current { FLOAT: left; COLOR: #fff;  background:url(btn-mainslideshow-hover.png) no-repeat; TEXT-ALIGN: center; margin:5px ; width:11px;  line-height: 11px;
+}

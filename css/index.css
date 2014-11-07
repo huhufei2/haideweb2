@@ -66,7 +66,7 @@ h1 ,h2{ padding:0px; margin:0px;}
 }
 .index-right h2{
     text-align: center;
-    margin: 20px;
+    margin: 14px;
 }
 .index-right strong{
     display: block;
@@ -90,7 +90,7 @@ h1 ,h2{ padding:0px; margin:0px;}
 .news_size{ padding:12px 17px 12px 10px;}
 .news-images{ float:left;}
 .news-right{ float:right; width:150px; text-align:center}
-.news-right h2{ padding:15px 0 25px; color:#333333;}
+.news-right h2{ padding:0px 0 15px; color:#333333;}
 .news-right h2 a{ color:#333333}
 .news-right h2 a:hover{ color:#ffa54a;}
 .news-right p{ text-align:left; color:#666666;}
@@ -134,7 +134,7 @@ h1 ,h2{ padding:0px; margin:0px;}
 
 
 .qiye-right{ z-index: 10;position: relative;float:right; background:url(../images/qiye_bj.png) no-repeat; width:688px; height:556px;}
-.qiye-right p{ color:#FFF; padding:40px 30px 0 30px;line-height:28px;}
+.qiye-right p{ color:#FFF; padding:10px 30px 0 30px;line-height:28px;}
 .zhushou91{ margin:40px 102px 100px 102px;}
 img{ border:0px}
 .scz91{ float: right;text-align: center; width: 99px; color:#FFF;cursor: pointer;}
@@ -170,7 +170,7 @@ img{ border:0px}
 }
 .member-pic img{
     width: 196px;
-    height: 147px;
+
 }
 
 .member-text{
